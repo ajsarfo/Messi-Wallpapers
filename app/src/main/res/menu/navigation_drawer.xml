@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/favorite_wallpaper"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorites"/>
+
+    <item
+        android:id="@+id/upload_wallpaper"
+        android:icon="@drawable/ic_upload"
+        android:title="@string/upload_image" />
+
+<!--
+<item android:title="@string/settings">
+
+    <menu>
+        <item
+            android:id="@+id/night_mode"
+            android:title="@string/night_mode"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat"/>
+
+        <item
+            android:id="@+id/offline_cache"
+            android:title="@string/offline_cache"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat"/>
+    </menu>
+
+</item>
+-->
+    <item android:title="@string/appreciate">
+        <menu>
+            <item
+                android:id="@+id/rate_app"
+                android:title="@string/rate_app"
+                android:icon="@drawable/ic_rate_app"/>
+
+            <item
+                android:id="@+id/share_app"
+                android:title="@string/share_app"
+                android:icon="@drawable/ic_share"/>
+
+            <item
+                android:id="@+id/more_apps"
+                android:title="@string/more_apps"
+                android:icon="@drawable/ic_more_apps"/>
+        </menu>
+    </item>
+</menu>

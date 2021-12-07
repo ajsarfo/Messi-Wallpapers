@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_spinner"
+        android:layout_width="@dimen/upload_dialog_loading_spinner_size"
+        android:layout_height="@dimen/upload_dialog_loading_spinner_size"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="loading_spinner.json"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="100% Completed"
+        android:textColor="@color/white"
+        tools:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/cancel_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:padding="@dimen/detail_wallpaper_icon_inner_padding"
+        android:background="@drawable/detail_icon_pad"
+        android:layout_marginBottom="@dimen/detail_wallpaper_icon_text_margin">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/upload_dialog_cancel_button_size"
+            android:layout_height="@dimen/upload_dialog_cancel_button_size"
+            app:srcCompat="@drawable/ic_cancel"
+            app:tint="@color/color_detail_icon" />
+    </LinearLayout>
+</LinearLayout>

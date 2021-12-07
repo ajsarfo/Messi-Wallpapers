@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Messi Wallpapers</string>
+
+    <string name="fragment_wallpaper_title">Messi Wallpapers</string>
+    <string name="fragment_quote_title">Messi Quotes</string>
+
+    <string name="favorite">like</string>
+    <string name="un_favorite">like</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="set_as">Set As</string>
+
+    <string name="upload_image">Upload Image</string>
+    <string name="approve_uploads">Approve Uploads</string>
+    <string name="settings">Settings</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="offline_cache">Offline Cache</string>
+    <string name="appreciate">Appreciate</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share_app">Share App</string>
+    <string name="more_apps">More Apps</string>
+    <string name="approve">Approve</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+
+    <string name="approve_wallpapers_here">Fetch Wallpapers Here!</string>
+
+    <string name="upload_wallpaper">Upload Wallpaper</string>
+    <string name="upload_wallpapers_here">Upload Wallpapers Here!</string>
+    <string name="wallpaper_category">Wallpaper Category</string>
+    <string name="wallpaper_section">Wallpaper Section</string>
+    <string name="favorites">Favorites</string>
+    <string name="reload">Reload</string>
+    <string name="connection_check_1">Connection error while trying to reload page.</string>
+    <string name="connection_check_2">Please check your internet connection.</string>
+    <string name="connection_error">Connection Error</string>
+    <string name="no_favorite_text">No Favorite Wallpapers Added!</string>
+
+    <string name="admob_test_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_test_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_test_reward_video_id">ca-app-pub-3940256099942544/5224354917</string>
+
+
+    <string name="admob_banner_main">@string/admob_test_banner_id</string>
+    <string name="admob_banner_detail">@string/admob_test_banner_id</string>
+    <string name="admob_banner_favorite">@string/admob_test_banner_id</string>
+
+    <string name="admob_interstitial_id">@string/admob_test_interstitial_id</string>
+    <string name="detail_admob_reward_video_id">@string/admob_test_reward_video_id</string>
+    <string name="quote_admob_reward_video_id">@string/admob_test_reward_video_id</string>
+
+    <!--
+        <string name="admob_banner_main">ca-app-pub-6150813452529727/6342747220</string>
+        <string name="admob_banner_detail">ca-app-pub-6150813452529727/6151175536</string>
+        <string name="admob_banner_favorite">ca-app-pub-6150813452529727/9571545791</string>
+
+        <string name="admob_interstitial_id">ca-app-pub-6150813452529727/7344644189</string>
+        <string name="detail_admob_reward_video_id">ca-app-pub-6150813452529727/7153072490</string>
+        <string name="quote_admob_reward_video_id">ca-app-pub-6150813452529727/6330945415</string>
+    -->
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301714995015",
+    "project_id": "messi-wallpapers-a80bd",
+    "storage_bucket": "messi-wallpapers-a80bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301714995015:android:04810647b98bb5b0123e62",
+        "android_client_info": {
+          "package_name": "com.sarftec.messiwallpapers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301714995015-7hlm9m1jq9r467tkggbf6emsvh3qvi5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDndHy7fcZ7ZdBNI9Oyfl8qYfNi7VYXXdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301714995015-7hlm9m1jq9r467tkggbf6emsvh3qvi5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

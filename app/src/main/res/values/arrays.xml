@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_items">
+        <item>Wallpapers</item>
+        <item>Quotes</item>
+    </string-array>
+
+    <string-array name="wallpapers_sections">
+        <item>Popular</item>
+        <item>Barcelona</item>
+        <item>Paris Saint Germain</item>
+        <item>Argentina</item>
+    </string-array>
+</resources>

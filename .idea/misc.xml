@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/detail_icon_pad.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_add_wallpaper.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_approve_upload.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_arrow_download.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_back.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_back_arrow.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_cancel.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_check.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_choose.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_close.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_download.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_eye.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_favorite.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_like.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_menu.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_more_apps.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_network_error.xml" value="0.2310185185185185" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_quotes.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_rate_app.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_reset.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_round_wallpapers.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_set_as_wallpaer.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_share.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_unfavorite.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_upload.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_wallpaper.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_wallpaper_item_bottom_gradient.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/drawable/ic_wallpaper_lock.xml" value="0.2598958333333333" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/activity_detail.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/activity_favorite.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/activity_main.xml" value="0.20153985507246377" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/activity_upload.xml" value="0.1" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/fragment_quote.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/fragment_wallpaper.xml" value="0.20175438596491227" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_drawer_header.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_favorite_item.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_loading_dialog.xml" value="0.16168478260869565" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_network_error.xml" value="0.1" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_scrim_dialog.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_upload_dialog.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_upload_item.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_wallpaper_base.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_wallpaper_detail.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_wallpaper_item.xml" value="0.21240942028985507" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/layout/layout_wallpaper_set_dialog.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/menu/navigation_approve_menu.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/menu/navigation_bottom.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/Sarfo/AndroidStudioProjects/MessiWallpapers/app/src/main/res/menu/navigation_drawer.xml" value="0.23958333333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
