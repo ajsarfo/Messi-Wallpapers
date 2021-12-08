@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.sarftec.messiwallpapers.R
+import com.sarftec.messiwallpapers.view.fragment_section.ArgentinaFragment
 import com.sarftec.messiwallpapers.view.fragment_section.BarcaFragment
 import com.sarftec.messiwallpapers.view.fragment_section.PSGFragment
 import com.sarftec.messiwallpapers.view.fragment_section.PopularFragment
@@ -19,7 +20,8 @@ class WallpaperPagerAdapter(private val activity: FragmentActivity)
         return when(position) {
             0 -> PopularFragment()
             1 -> BarcaFragment()
-            else -> PSGFragment()
+            2 -> PSGFragment()
+            else -> ArgentinaFragment()
         }
     }
 }

@@ -7,10 +7,12 @@
         android:icon="@drawable/ic_favorite"
         android:title="@string/favorites"/>
 
+   <!--
     <item
         android:id="@+id/upload_wallpaper"
         android:icon="@drawable/ic_upload"
         android:title="@string/upload_image" />
+        -->
 
 <!--
 <item android:title="@string/settings">

@@ -79,7 +79,7 @@ class DetailActivity : BaseActivity() {
     }
 
     override fun createAdCounterManager(): AdCountManager {
-        return AdCountManager(listOf(3, 5, 4, 6))
+        return AdCountManager(listOf(3, 5, 8, 12))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

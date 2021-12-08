@@ -128,12 +128,14 @@ class MainActivity : BaseActivity(),
                     }
                     true
                 }
+                /*
                 R.id.upload_wallpaper -> {
                     setDrawerCallback {
                         navigateTo(UploadActivity::class.java)
                     }
                     true
                 }
+                 */
                 R.id.share_app -> {
                     setDrawerCallback {
                         share(

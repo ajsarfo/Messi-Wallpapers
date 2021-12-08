@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_menu"
         app:title="@string/fragment_wallpaper_title"
-        app:titleTextColor="@color/toolbar_text"
+        app:titleTextColor="@color/color_network_error_text"
         app:titleTextAppearance="@style/CustomToolbarStyle" />
 
     <com.google.android.material.tabs.TabLayout
