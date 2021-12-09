@@ -17,9 +17,7 @@ import com.sarftec.messiwallpapers.view.handler.ReadWriteHandler
 import com.sarftec.messiwallpapers.view.utils.toast
 import com.sarftec.messiwallpapers.view.viewmodel.UploadViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -108,19 +106,14 @@ class UploadActivity : BaseActivity() {
     }
 
     private fun uploadWallpapers(items: List<UploadViewModel.UploadInfoOverlay>) {
-        if(items.isEmpty()) {
+        if (items.isEmpty()) {
             uploadDialog.dismiss()
             return
         }
         val progressDiff = 1 / items.size.toFloat()
         uploadJob = lifecycleScope.launch {
-            val tasks = items.map { overlay ->
-                async(Dispatchers.IO) {
-                    uploadWallpaper(overlay)
-                }
-            }
-            tasks.forEachIndexed { index, deferred ->
-                val result = deferred.await()
+            items.forEachIndexed { index, overlay ->
+                val result = uploadWallpaper(overlay)
                 if (result.isError()) Log.v("TAG", "Error => ${result.message}")
                 if (result.isSuccess()) {
                     uploadDialog.setProgress((progressDiff * (index + 1) * 100).toInt())
