@@ -24,6 +24,7 @@ import com.sarftec.messiwallpapers.view.handler.ReadWriteHandler
 import com.sarftec.messiwallpapers.view.listener.DrawerFragmentListener
 import com.sarftec.messiwallpapers.view.listener.QuoteFragmentListener
 import com.sarftec.messiwallpapers.view.listener.WallpaperFragmentListener
+import com.sarftec.messiwallpapers.view.manager.AppReviewManager
 import com.sarftec.messiwallpapers.view.model.WallpaperUI
 import com.sarftec.messiwallpapers.view.parcel.WallpaperToDetail
 import com.sarftec.messiwallpapers.view.utils.moreApps
@@ -63,6 +64,11 @@ class MainActivity : BaseActivity(),
             networkManager
         )
     }
+
+    private val appReviewManager by lazy {
+        AppReviewManager(this)
+    }
+
     override fun createAdCounterManager(): AdCountManager {
         return AdCountManager(listOf(1, 3, 4, 2, 3))
     }
@@ -81,6 +87,9 @@ class MainActivity : BaseActivity(),
         setupNavigationView()
         setupNavigationHeader()
         layoutBinding.bottomNavigation.setupWithNavController(getNavController())
+        lifecycleScope.launchWhenCreated {
+            appReviewManager.init().triggerReview()
+        }
     }
 
     override fun onBackPressed() {

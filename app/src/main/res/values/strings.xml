@@ -40,7 +40,6 @@
     <string name="admob_test_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
     <string name="admob_test_reward_video_id">ca-app-pub-3940256099942544/5224354917</string>
 
-
     <!--
     <string name="admob_banner_main">@string/admob_test_banner_id</string>
     <string name="admob_banner_detail">@string/admob_test_banner_id</string>
