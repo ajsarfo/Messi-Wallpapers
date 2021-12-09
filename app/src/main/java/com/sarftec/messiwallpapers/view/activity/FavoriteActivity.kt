@@ -63,12 +63,6 @@ class FavoriteActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layoutBinding.root)
-        /*************** Admob Configuration ********************/
-        BannerManager(this, adRequestBuilder).attachBannerAd(
-            getString(R.string.admob_banner_favorite),
-            layoutBinding.mainBanner
-        )
-        /**********************************************************/
         readWriteHandler = ReadWriteHandler(this)
         viewModel.loadWallpapers()
         setupClickListeners()
@@ -82,6 +76,7 @@ class FavoriteActivity : BaseActivity() {
             lifecycleScope.launch {
                 viewModel.getImage(image).let {
                     if(it.isSuccess()) this@FavoriteActivity.downloadGlideImage(it.data!!).let { result ->
+                        loadingDialog.dismiss()
                         if(result.isSuccess()) callback(result.data!!)
                         else toast("Action Failed!")
                     }

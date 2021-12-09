@@ -12,10 +12,8 @@ import com.sarftec.messiwallpapers.R
 import com.sarftec.messiwallpapers.databinding.ActivityDetailBinding
 import com.sarftec.messiwallpapers.view.adapter.WallpaperDetailAdapter
 import com.sarftec.messiwallpapers.view.advertisement.AdCountManager
-import com.sarftec.messiwallpapers.view.advertisement.BannerManager
 import com.sarftec.messiwallpapers.view.advertisement.RewardVideoManager
 import com.sarftec.messiwallpapers.view.dialog.LoadingDialog
-import com.sarftec.messiwallpapers.view.dialog.ScrimDialog
 import com.sarftec.messiwallpapers.view.dialog.SetWallpaperDialog
 import com.sarftec.messiwallpapers.view.handler.ReadWriteHandler
 import com.sarftec.messiwallpapers.view.handler.ToolingHandler
@@ -85,12 +83,6 @@ class DetailActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layoutBinding.root)
-        /*************** Admob Configuration ********************/
-        BannerManager(this, adRequestBuilder).attachBannerAd(
-            getString(R.string.admob_banner_detail),
-            layoutBinding.mainBanner
-        )
-        /**********************************************************/
         readWriteHandler = ReadWriteHandler(this)
         setupClickListeners()
         setupViewPager()
@@ -121,18 +113,12 @@ class DetailActivity : BaseActivity() {
         viewModel.getAtPosition(layoutBinding.viewPager.currentItem)?.let { image ->
             lifecycleScope.launch {
                 viewModel.getImage(image).let {
-                    if(it.isSuccess()) this@DetailActivity.downloadGlideImage(it.data!!).let { result ->
-                        if(result.isSuccess()) {
-                            rewardVideoManager.showRewardVideo {
-                                loadingDialog.dismiss()
-                                callback(result.data!!)
-                            }
-                        }
-                        else {
+                    if (it.isSuccess()) this@DetailActivity.downloadGlideImage(it.data!!)
+                        .let { result ->
                             loadingDialog.dismiss()
-                            toast("Action Failed!")
+                            if (result.isSuccess()) callback(result.data!!)
+                            else toast("Action Failed!")
                         }
-                    }
                     else {
                         loadingDialog.dismiss()
                         toast("Action Failed!")
@@ -150,10 +136,10 @@ class DetailActivity : BaseActivity() {
             runCurrentBitmapCallback { toolingHandler.shareImage(it) }
         }
         layoutBinding.download.setOnClickListener {
-          runCurrentBitmapCallback { toolingHandler.saveImage(it) }
+            runCurrentBitmapCallback { toolingHandler.saveImage(it) }
         }
         layoutBinding.wallpaper.setOnClickListener {
-          runCurrentBitmapCallback { wallpaperDialog.show() }
+            runCurrentBitmapCallback { wallpaperDialog.show() }
         }
         layoutBinding.favorite.setOnClickListener {
             viewModel.getAtPosition(layoutBinding.viewPager.currentItem)?.let {
@@ -176,10 +162,8 @@ class DetailActivity : BaseActivity() {
             object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
-                    interstitialManager?.showAd {
-                        viewModel.getAtPosition(position)?.let {
-                            setFavorite(it.wallpaper.isFavorite)
-                        }
+                    viewModel.getAtPosition(position)?.let {
+                        setFavorite(it.wallpaper.isFavorite)
                     }
                 }
             }
@@ -188,7 +172,7 @@ class DetailActivity : BaseActivity() {
 
     private fun setFavorite(isFavorite: Boolean) {
         viewModel.geWallpaperAtPosition(layoutBinding.viewPager.currentItem)?.let {
-            if(isFavorite) viewModel.saveFavorite(it)
+            if (isFavorite) viewModel.saveFavorite(it)
             else viewModel.deleteFavorite(it)
         }
         layoutBinding.apply {

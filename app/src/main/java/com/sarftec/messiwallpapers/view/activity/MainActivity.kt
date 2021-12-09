@@ -19,7 +19,6 @@ import com.sarftec.messiwallpapers.view.advertisement.BannerManager
 import com.sarftec.messiwallpapers.view.advertisement.InterstitialManager
 import com.sarftec.messiwallpapers.view.advertisement.RewardVideoManager
 import com.sarftec.messiwallpapers.view.dialog.LoadingDialog
-import com.sarftec.messiwallpapers.view.handler.NightModeHandler
 import com.sarftec.messiwallpapers.view.handler.ReadWriteHandler
 import com.sarftec.messiwallpapers.view.listener.DrawerFragmentListener
 import com.sarftec.messiwallpapers.view.listener.QuoteFragmentListener
@@ -63,18 +62,13 @@ class MainActivity : BaseActivity(),
             networkManager
         )
     }
+
     override fun createAdCounterManager(): AdCountManager {
         return AdCountManager(listOf(1, 3, 4, 2, 3))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /*************** Admob Configuration ********************/
-        BannerManager(this, adRequestBuilder).attachBannerAd(
-            getString(R.string.admob_banner_main),
-            layoutBinding.mainBanner
-        )
-        /**********************************************************/
         readWriteHandler = ReadWriteHandler(this)
         setContentView(layoutBinding.root)
         setupNavigationDrawer()
@@ -187,15 +181,13 @@ class MainActivity : BaseActivity(),
         section: WallpaperViewModel.Section,
         wallpaper: WallpaperUI.Wallpaper
     ) {
-        interstitialManager?.showAd {
-            navigateToWithParcel(
-                DetailActivity::class.java,
-                parcel = WallpaperToDetail(
-                    wallpaper.wallpaper.id,
-                    getParcelSelection(section)
-                )
+        navigateToWithParcel(
+            DetailActivity::class.java,
+            parcel = WallpaperToDetail(
+                wallpaper.wallpaper.id,
+                getParcelSelection(section)
             )
-        }
+        )
     }
 
     private fun getParcelSelection(selection: WallpaperViewModel.Section): Int {
@@ -212,7 +204,7 @@ class MainActivity : BaseActivity(),
     }
 
     override fun showLoadingDialog(isShown: Boolean) {
-        if(isShown) loadingDialog.show()
+        if (isShown) loadingDialog.show()
         else loadingDialog.dismiss()
     }
 

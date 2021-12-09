@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.viewpager2.widget.ViewPager2
 import com.sarftec.messiwallpapers.databinding.FragmentQuoteBinding
 import com.sarftec.messiwallpapers.view.adapter.QuoteItemAdapter
 import com.sarftec.messiwallpapers.view.dialog.SetWallpaperDialog
@@ -67,12 +66,10 @@ class QuoteFragment : Fragment() {
                     if (it.isSuccess()) requireActivity().downloadGlideImage(it.data!!)
                         .let { result ->
                             if (result.isSuccess()) {
-                                listener.getRewardVideo().showRewardVideo {
-                                    listener.showLoadingDialog(false)
-                                    callback(result.data!!)
-                                }
-                            }
-                            else {
+                                listener.showLoadingDialog(false)
+                                callback(result.data!!)
+
+                            } else {
                                 requireContext().toast("Action Failed!")
                                 listener.showLoadingDialog(false)
                             }
@@ -160,14 +157,6 @@ class QuoteFragment : Fragment() {
         layoutBinding.viewPager.adapter = quoteAdapter
         layoutBinding.viewPager.setPageTransformer(
             ZoomOutPageTransformer()
-        )
-        layoutBinding.viewPager.registerOnPageChangeCallback(
-            object : ViewPager2.OnPageChangeCallback() {
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-                    listener.getAdInterstitialManager()?.showAd {}
-                }
-            }
         )
     }
 }

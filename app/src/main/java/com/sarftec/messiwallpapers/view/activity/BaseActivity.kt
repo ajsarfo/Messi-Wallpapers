@@ -29,7 +29,7 @@ abstract class BaseActivity : AppCompatActivity() {
     @Inject
     lateinit var networkManager: NetworkManager
 
-    protected open fun canShowInterstitial() : Boolean = true
+    protected open fun canShowInterstitial() : Boolean = false
 
     protected open fun createAdCounterManager() : AdCountManager {
         return AdCountManager(listOf(1, 4, 3))
