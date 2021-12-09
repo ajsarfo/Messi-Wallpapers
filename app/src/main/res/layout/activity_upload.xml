@@ -17,7 +17,7 @@
         app:layout_scrollFlags="scroll|enterAlways"
         app:navigationIcon="@drawable/ic_back_arrow"
         app:title="Upload Wallpaper"
-        app:titleTextColor="@color/toolbar_text"
+        app:titleTextColor="@color/color_network_error_text"
         app:titleTextAppearance="@style/CustomToolbarStyle" />
 
 
